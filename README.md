@@ -71,7 +71,7 @@ Lembrando que você irá precisar ter uma conta no [Figma](http://figma.com/).
   <img alt="" title="" src="" width="400px">
 </p> -->
 ## 🎯 Desafios [Em breve]
-  - [ ] [Página 404]()
+  - [x] [Página 404](https://www.linkedin.com/posts/jo%C3%A3o-bispo-2077_dicadeouro-nlw3-rocketseat-activity-6721860178469277697-Bx_0)
   - [ ] [Darkmode]()
   - [ ] [Upload de imagens]()
 

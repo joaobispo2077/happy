@@ -11,7 +11,7 @@ function Routes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Landing} />
-        <Route path="/app" component={OrphanagesMap} />
+        <Route path="/orphanages/map" component={OrphanagesMap} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
