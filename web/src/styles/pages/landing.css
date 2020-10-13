@@ -18,13 +18,13 @@
 
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     flex-direction: column;
 
     background: url('../../images/landing.svg') no-repeat 80% center;
 }
 
 #page-landing .content-wrapper main {
-    margin-top: 120px;
     max-width: 350px;
 }
 
