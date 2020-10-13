@@ -54,7 +54,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Hapypy é uma plataforma que visa facilitar o encontro de orfanatos por pessoas que querem visita-los.
+O Happy é uma plataforma que visa facilitar o encontro de orfanatos por pessoas que querem visita-los.
 
 ## 🔖 Layout
 Clique nos links para acessar os projetos Web e Mobile.
