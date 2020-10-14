@@ -16,9 +16,7 @@ export default {
     const { id } = request.params;
 
     const orphanagesRepository = getRepository(Orphanage);
-    const orphanage = await orphanagesRepository.find({where: {
-      id
-    }});
+    const orphanage = await orphanagesRepository.findOneOrFail(id);
 
     return response.status(200).json(orphanage);
   },
