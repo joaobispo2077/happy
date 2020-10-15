@@ -24,7 +24,6 @@ function OrphanagesMap() {
   useEffect(() => {
     api.get('/orphanages')
     .then(response => {
-      console.log(response);
       setOrphanages(response.data);
       
     });

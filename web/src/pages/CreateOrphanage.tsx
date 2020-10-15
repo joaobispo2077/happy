@@ -1,11 +1,7 @@
 import React from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
-import L from 'leaflet';
-
 
 import { FiPlus } from "react-icons/fi";
-
-import mapMarkerImg from '../images/map-marker.svg';
 
 import '../styles/pages/create-orphanage.css';
 
