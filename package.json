@@ -1,0 +1,22 @@
+{
+    "name": "happy",
+    "version": "1.0.0",
+    "description": "<meta charset=\"utf-8\"> <h1 align=\"center\">     <img alt=\"Logo Happy\" title=\"#Happy\" src=\".github/logo.svg\" width=\"200px\" /> </h1>",
+    "main": "index.js",
+    "scripts": {
+        "start": "node /backend/dist/server.js",
+        "build": "cd web react-scripts start"
+
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joaobispo2077/happy.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/joaobispo2077/happy/issues"
+    },
+    "homepage": "https://github.com/joaobispo2077/happy#readme"
+}
