@@ -1,0 +1,102 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "version": "1.0.0",
+        "title": "Happy",
+        "description": "Happy API",
+        "termsOfService": "",
+        "license": {
+            "name": "",
+            "url": ""
+        }
+    },
+    "servers": [{
+            "url": "http://localhost:3333/",
+            "description": "Production Server"
+        },
+        {
+            "url": "http://localhost:3333/",
+            "description": "Local server"
+        }
+    ],
+    "paths": {
+        "/orphanages": {
+            "post": {
+                "description": "Create a new Orphanages",
+                "operationId": "createOrphanages",
+                "parameters": [],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/orphanages"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "201": {
+                        "description": "The orphanages has been created",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/OrphanagesCreatedResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid parameters",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                },
+                                "example": {
+                                    "message": "Invalid parameters",
+                                    "code": "400",
+                                    "error": "Bad Request"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/orphanages/:id": {
+            "get": {
+                "description": "Get orphanage by id",
+                "operationId": "getOrphanageById",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "The Orphanage information",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/OrphanageDetailResponse"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found!",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                },
+                                "example": {
+                                    "message": "User not found",
+                                    "code": "404",
+                                    "error": "Not Found"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
