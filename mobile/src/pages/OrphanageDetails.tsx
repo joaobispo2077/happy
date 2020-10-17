@@ -108,7 +108,7 @@ export default function OrphanageDetails() {
         <View style={styles.scheduleContainer}>
           <View style={[styles.scheduleItem, styles.scheduleItemBlue]}>
             <Feather name="clock" size={40} color="#2AB5D1" />
-            <Text style={[styles.scheduleText, styles.scheduleTextBlue]}>{orphanage.opening_hours}</Text>
+            <Text style={[styles.scheduleText, styles.scheduleTextBlue]}>Seg à Sex: {orphanage.opening_hours}</Text>
           </View>
 
           {   orphanage.open_on_weekends ? (
